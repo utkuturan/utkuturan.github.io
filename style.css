@@ -263,6 +263,67 @@ footer {
     box-shadow: 0 0 15px rgba(93, 156, 236, 0.4); /* Hafif bir parlama */
 }
 
+/* --- Projects Section Styles (Projeler Bölümü Stilleri) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kutuları yan yana dizer */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #4CAF50; /* Üzerine gelince yeşil kenarlık */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+.project-card p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tags {
+    margin: 15px 0;
+}
+
+.tags span {
+    background: #2d2d2d;
+    color: #81c784; /* O düz yazıları yeşil etiket yapar */
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    border: 1px solid #444;
+}
+
+.btn-project {
+    display: inline-block;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: #64b5f6; /* O parlak maviyi daha yumuşak bir mavi yapar */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-project:hover {
+    text-decoration: underline;
+    color: #9be7ff;
+}
+
 /* --- MOBİL UYUMLULUK --- */
 @media (max-width: 600px) {
     /* Kenar boşluklarını mobilde biraz daraltalım */

@@ -66,7 +66,12 @@ header h1 {
 
 /* Sosyal Linkler */
 .social-links {
-    margin-top: 25px;
+    display: flex;           /* Esnek kutu modeli */
+    justify-content: flex-start; /* Ortala */
+    flex-wrap: wrap;         /* Sığmazsa aşağı kaydır (kesme yapma) */
+    gap: 15px;               /* Öğeler arasına eşit boşluk koy */
+    align-items: center;     /* Dikeyde hizala */
+    margin-top: 20px;
 }
 
 .social-links a {
@@ -277,6 +282,12 @@ footer {
     border-radius: 8px;
     border: 1px solid #333;
     transition: transform 0.3s ease, border-color 0.3s ease;
+
+    /* ---"view on Github'ı sol aşağıda hizalamak için ne hallere düştük :)" EKLENECEK KISIM --- */ /* Kart içeriğini dikey olarak yaydı */ 
+    display: flex;           /* İçeriği esnek kutu modeline çevirir */
+    flex-direction: column;  /* Öğeleri alt alta dizer */
+    height: 90%;            /* Kartın yüksekliğini bulunduğu satıra yayar 90% iyidir */
+    /* ---------------------- */
 }
 
 .project-card:hover {
@@ -293,10 +304,15 @@ footer {
     color: #b0b0b0;
     font-size: 0.95rem;
     line-height: 1.5;
+
+    min-height: 80px; /* Açıklama kutusunun minimum yüksekliği */
+    margin-bottom: 0;
 }
 
 .tags {
     margin: 15px 0;
+
+    margin-bottom: auto; /* Açıklama ile buton arasındaki boşluğu esnek yapar */
 }
 
 .tags span {
@@ -316,7 +332,10 @@ footer {
     text-decoration: none; /* Alt çizgiyi kaldırır */
     color: #64b5f6; /* O parlak maviyi daha yumuşak bir mavi yapar */
     font-weight: bold;
-    margin-top: 10px;
+    /* ---"view on Github'ı sol aşağıda hizalamak için ne hallere düştük :)"*/
+    margin-top: 10px;        /* Butonu en alta iter */
+    align-self: flex-start;  /* Butonu sola yaslar (isteğe bağlı) */
+    /* ---------------------- */
 }
 
 .btn-project:hover {
@@ -346,6 +365,11 @@ footer {
     font-weight: bold;
     margin-left: 10px;         /* Diğer linklerden biraz uzaklaşsın */
     transition: background 0.3s;
+
+    white-space: nowrap;  /* Yazıyı asla alt satıra kırma */
+    display: inline-flex; /* İkon ve yazıyı hizalar */
+    align-items: center;  /* Dikeyde ortalar */
+    gap: 8px;             /* İkon ile yazı arasına boşluk koyar */
 }
 
 .cv-button:hover {

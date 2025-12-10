@@ -336,6 +336,22 @@ footer {
     box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Hafif gölge */
 } 
 
+/* --- CV Download Button --- */
+.cv-button {
+    background-color: #4CAF50; /* Yeşil buton */
+    color: white !important;   /* Beyaz yazı */
+    padding: 8px 15px;         /* Biraz dolgunluk */
+    border-radius: 5px;        /* Kenarları yuvarlat */
+    text-decoration: none;     /* Alt çizgiyi kaldır */
+    font-weight: bold;
+    margin-left: 10px;         /* Diğer linklerden biraz uzaklaşsın */
+    transition: background 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #45a049; /* Üzerine gelince koyulaşsın */
+}
+
 /* --- MOBİL UYUMLULUK --- */
 @media (max-width: 600px) {
     /* Kenar boşluklarını mobilde biraz daraltalım */

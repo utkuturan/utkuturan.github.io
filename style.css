@@ -400,4 +400,13 @@ footer {
     .job-card, .timeline-item {
         padding-left: 15px;
     }
+
+    /* Download butonunu genişletme */
+  .cv-button { 
+    display: block;        /* veya flex, hizalama tercihinize göre */
+    width: 100%;           /* Tam genişlik */
+    text-align: center;    /* Yazıyı ortala */
+    margin-top: 20px;      /* Üstten boşluk */
+    box-sizing: border-box; /* Padding eklenirse taşmayı önler */
+  }
 }
